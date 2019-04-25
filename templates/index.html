@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+
+{% block jumbo_title %}
+LANL Earthquake Prediction App
+{% endblock %}
+
+{% block jumbo_subtitle %}
+Application for earthquake time-to-failure prediction and
+viewing pre-computed test set predictions
+{% endblock %}
+
+{% block content %}
+<blockquote class="blockquote" style="text-align: justify; padding-bottom: 20px">
+    Forecasting earthquakes is one of the most important problems
+    in the Earth Sciences because of the devastating
+    consequences of earthquakes. Current scientific studies
+    related to earthquake forecasting focus on three key points:
+    when the event will occur, where it will occur, and how
+    large it will be. Often, laboratory earthquakes are used for these
+    studies. A laboratory earthquake is an experiment
+    where similar seismic signals are recorded in the time
+    leading up to a slip.
+    <br><br>
+    In this project, we built models to predict the time remaining
+    before laboratory earthquakes occur (time-to-failure), given
+    a segment of seismic data. After experimentation with multiple
+    deep models, we found that DenseNet performed the best for the
+    task. We present the DenseNet time-to-failure predictions here
+    in this app.
+</blockquote>
+<div class="row marketing">
+    <div class="col-lg-6">
+        <a class="btn btn-lg btn-block btn-outline-primary" href="/predict">
+            Predict time-to-failure for new acoustic data
+        </a>
+    </div>
+
+    <div class="col-lg-6">
+        <a class="btn btn-lg btn-block btn-outline-primary" href="/ranks">
+            View pre-computed top-ranked predictions
+        </a>
+    </div>
+</div>
+{% endblock %}

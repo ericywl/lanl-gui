@@ -1,0 +1,7 @@
+.ipynb_checkpoints/
+.vscode/
+*.zip
+
+.python-version
+
+static/img/preds/*
