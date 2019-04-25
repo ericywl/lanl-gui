@@ -1,4 +1,4 @@
-# Pascal VOC Deep Learning Project
+# LANL Earthquake Prediction
 
 ## Setup
 
